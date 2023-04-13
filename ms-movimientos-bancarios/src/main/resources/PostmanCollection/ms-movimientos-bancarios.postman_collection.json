@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "da7d5a8e-623d-47d0-9924-b0c596f9e9e5",
+		"name": "ms-movimientos-bancarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19056368"
+	},
+	"item": [
+		{
+			"name": "/api/clientes/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/ms-movimientos-bancarios/api/clientes/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ms-movimientos-bancarios",
+						"api",
+						"clientes",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/clientes/registrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Juana Perdomo\",\r\n  \"direccion\": \"Avenida 13\",\r\n  \"telefono\": \"1213\",\r\n  \"contrasenia\": \"1313\",\r\n  \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/ms-movimientos-bancarios/api/clientes/registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ms-movimientos-bancarios",
+						"api",
+						"clientes",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/clientes/actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Sofia Claus\",\r\n  \"genero\": \"Femenino\",\r\n  \"edad\": \"35\",\r\n  \"identificacion\": \"1010\",\r\n  \"direccion\": \"Avenida 12 No 1212\",\r\n  \"telefono\": \"1333\",\r\n  \"contrasenia\": \"1551\",\r\n  \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/ms-movimientos-bancarios/api/clientes/actualizar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ms-movimientos-bancarios",
+						"api",
+						"clientes",
+						"actualizar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/clientes/eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/ms-movimientos-bancarios/api/clientes/eliminar?clienteid=7&personaid=16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ms-movimientos-bancarios",
+						"api",
+						"clientes",
+						"eliminar"
+					],
+					"query": [
+						{
+							"key": "clienteid",
+							"value": "7"
+						},
+						{
+							"key": "personaid",
+							"value": "16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/cuentas/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/ms-movimientos-bancarios/api/cuentas/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ms-movimientos-bancarios",
+						"api",
+						"cuentas",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/cuentas/registrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numero\": \"655825\",\r\n  \"tipocuenta\": \"Corriente\",\r\n  \"saldoinicial\": 0,\r\n  \"estado\": true,\r\n  \"nombre\": \"Sofia Claus\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/ms-movimientos-bancarios/api/cuentas/registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ms-movimientos-bancarios",
+						"api",
+						"cuentas",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/cuentas/actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numero\": \"560813\",\r\n  \"tipocuenta\": \"Corriente\",\r\n  \"saldoinicial\": 1000,\r\n  \"estado\": true,\r\n  \"nombre\": \"Sofia Claus\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/ms-movimientos-bancarios/api/cuentas/actualizar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ms-movimientos-bancarios",
+						"api",
+						"cuentas",
+						"actualizar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/cuentas/eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/ms-movimientos-bancarios/api/cuentas/eliminar?numero=333333",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ms-movimientos-bancarios",
+						"api",
+						"cuentas",
+						"eliminar"
+					],
+					"query": [
+						{
+							"key": "numero",
+							"value": "333333"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/movimientos/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/ms-movimientos-bancarios/api/movimientos/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ms-movimientos-bancarios",
+						"api",
+						"movimientos",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/movimientos/registrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numerocuenta\": \"555825\",\r\n  \"tipomovimiento\": \"Retiro\",\r\n  \"valor\": 3600\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/ms-movimientos-bancarios/api/movimientos/registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ms-movimientos-bancarios",
+						"api",
+						"movimientos",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/reportes/ReportePorFechasPorUsuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/ms-movimientos-bancarios/api/reportes/ReportePorFechasPorUsuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ms-movimientos-bancarios",
+						"api",
+						"reportes",
+						"ReportePorFechasPorUsuario"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
