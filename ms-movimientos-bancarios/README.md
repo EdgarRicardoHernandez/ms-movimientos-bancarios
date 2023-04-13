@@ -42,4 +42,8 @@ El servicio necesita configuraciones propias de la aplicación y que se configur
 
 ### Creación Base de Datos y Tablas base de datos.
 
-| Se requiere la ejecución de un script para crear la base de datos y  generar las tablas e inserts correspondientes. El archivo se encuentra en: resources/sql/BaseDatos.sql
+| Se requiere la ejecución de un script para crear la base de datos y  generar las tablas e inserts correspondientes. El archivo se encuentra en: resources/sql/BaseDatos.sql							|
+| proyecto:  ms-movimientos-bancarios	|
+| https:  https://github.com/EdgarRicardoHernandez/ms-movimientos-bancarios.git  	|
+| swagger: http://localhost:8081/ms-movimientos-bancarios/swagger-ui/index.html		|
+1 Postman Collection: https://github.com/EdgarRicardoHernandez/ms-movimientos-bancarios/blob/main/ms-movimientos-bancarios/src/main/resources/PostmanCollection/ms-movimientos-bancarios.postman_collection.json	|
